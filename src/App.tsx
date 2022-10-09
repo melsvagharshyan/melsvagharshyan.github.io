@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Messenger from "./Components/Messenger/Messenger";
 import Footer from "./Components/Footer/Footer";
+import FreeHelp from "./Components/FreeHelp/FreeHelp";
 
 
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
             <About/>
             <Skills/>
             <Messenger/>
+            <FreeHelp/>
             <Footer/>
         </div>
     );

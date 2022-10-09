@@ -1,0 +1,64 @@
+.FreeHelp {
+ padding: 100px 10px 100px 10px;
+  max-width: 100%;
+  width: 100%;
+  background: #1d2e36;
+  text-align: center;
+
+
+  form{
+    padding: 40px 30px 40px 30px;
+    text-align: center;
+    border-radius: 7px;
+    background: white;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    margin: 0 auto;
+
+    div{
+      font-family: 'Poppins', sans-serif;
+      font-size: 18px;
+      padding-bottom: 10px;
+      font-weight: bold;
+      color: gray;
+    }
+
+    input{
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      padding-left: 15px;
+      border-radius: 5px;
+      border: 1px solid #d4d7e5;;
+      outline: none;
+      height: 50px;
+    }
+
+    input:focus{
+      box-shadow: #3fa7b6 0 0 5px 0;
+    }
+    .Message{
+      height: 100px;
+    }
+     input[type=submit]{
+       font-family: 'Poppins', sans-serif;
+       font-size: 18px;
+       padding: 0 5px;
+       border: none;
+       color: white;
+       max-width: 200px;
+       background: #3fa7b6;
+     }
+  }
+}
+
+@media screen and (max-width: 500px){
+  .FreeHelp{
+    form{
+      input[type=submit]{
+        max-width: 100%;
+      }
+    }
+  }
+}

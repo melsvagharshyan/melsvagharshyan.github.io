@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                     <br/>
                     <span>info@creatix.tech</span>
                 </div>
-                <div className={styles.address}>
+                <div className={styles.address} id={"Contact"}>
                     <span>24/15 Azatutyan Ave, 0018</span>
                     <span>Yerevan, Armenia</span>
                     <span>+374 94541615</span>
