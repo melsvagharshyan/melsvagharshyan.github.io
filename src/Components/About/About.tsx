@@ -6,7 +6,7 @@ import React from 'react';
 const About = () => {
     return (
         <div className={styles.About} id={"About"}>
-            <h1>ABOUT ME</h1>
+            <h1>About Me</h1>
             <div className={styles.AboutContainer}>
                 <img className={styles.MelsImage} src="../../Images/mels.jpg" alt="Mels"/>
                 <div className={styles.aboutText}>
