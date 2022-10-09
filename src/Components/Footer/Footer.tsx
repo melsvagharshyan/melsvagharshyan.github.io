@@ -7,9 +7,10 @@ const Footer: React.FC = () => {
     return (
         <div className={styles.Footer}>
             <div className={styles.section1}>
-               <span className={styles.silver}>Mels Code is a global software engineering company offering IT, advanced technology
+               <span className={styles.silver}>
+                   The Vagharshyan's blog is considered to be my author blog,
                    <br/>
-                solutions for small, medium businesses and enterprises.
+                   it aims to be a way of communication with various programmers.
                </span>
                 <span>Fill in your email to get special offers and updates.</span>
                 <div className={styles.subscribe}>
@@ -17,35 +18,23 @@ const Footer: React.FC = () => {
                     <input type="text" placeholder={"Insert your email here"}/>
                     <button>Subscribe</button>
                 </div>
-                <span className={styles.copyright}>Mels Code Copyright © 2022. All Rights Reserved</span>
             </div>
             <div className={styles.section2}>
-                <span>Terms & Conditions</span>
-                <span>Privacy Policy</span>
+                <a href="https://www.facebook.com/mels.vagharshyan">Facebook</a>
+                <a href="https://www.linkedin.com/in/mels-vagharshyan-522735227/">Linkedin</a>
+                <a href="https://www.instagram.com/mels_vagharshyan/">Instagram</a>
+                <a href="https://github.com/melsvagharshyan/melsvagharshyan.github.io">GitHub</a>
             </div>
             <div className={styles.section3}>
-                <a href="">Facebook</a>
-                <a href="">Linkedin</a>
-                <a href="">Instagram</a>
-                <a href="">GitHub</a>
-            </div>
-            <div className={styles.section4}>
                 <div className={styles.contactUs}>
-                    Contact Us
-                    <br/>
-                    <span>info@creatix.tech</span>
+                    Contact Me
                 </div>
                 <div className={styles.address} id={"Contact"}>
-                    <span>24/15 Azatutyan Ave, 0018</span>
-                    <span>Yerevan, Armenia</span>
-                    <span>+374 94541615</span>
+                    <a href="tel:+37494541615">+37494541615</a>
+                    <a href="tel:+37491991615">+37491991615</a>
                     <hr/>
-                    <span>Schönhauser Allee 163 10435</span>
-                    <span>Berlin, Germany</span>
-                    <span>+49 1762 1048349</span>
-                    <hr/>
-                    <span> UK, London</span>
-                    <span>+44 808 175 2566</span>
+                    <span>mels.vagharshyan18@gmail.com</span>
+                    <span>melsvagharshyan.github.io</span>
                 </div>
             </div>
         </div>
