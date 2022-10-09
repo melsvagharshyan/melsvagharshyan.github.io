@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/melsvagharshyan/static/css/main.593a469c.css",
+    "main.js": "/melsvagharshyan/static/js/main.cdfd8856.js",
+    "index.html": "/melsvagharshyan/index.html",
+    "main.593a469c.css.map": "/melsvagharshyan/static/css/main.593a469c.css.map",
+    "main.cdfd8856.js.map": "/melsvagharshyan/static/js/main.cdfd8856.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.593a469c.css",
+    "static/js/main.cdfd8856.js"
+  ]
+}
