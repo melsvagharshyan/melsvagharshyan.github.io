@@ -1,0 +1,74 @@
+.Skills {
+  padding-top: 100px;
+  max-width: 100%;
+  width: 100%;
+
+
+  .SkillsText {
+    padding: 45px 0 20px 0;
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    h1 {
+      padding-bottom: 20px;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    span {
+      color: gray;
+    }
+  }
+
+  //Items
+  .Items {
+    padding: 50px 11% 50px 11%;
+    display: grid;
+    row-gap: 100px;
+    column-gap: 14%;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    max-width: 100%;
+    width: 100%;
+
+    .item {
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-flow: column;
+      align-items: start;
+      grid-gap: 15px;
+
+      img {
+        border-radius: 5px;
+        max-width: 65px;
+        max-height: 65px;
+        box-shadow: gray 0 5px 5px 0;
+      }
+
+      h3 {
+        font-family: 'Manrope', sans-serif;
+        padding-left: 15px;
+      }
+
+      span {
+        font-family: 'Manrope', sans-serif;
+        padding-left: 15px;
+        color: #585c7b;
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Skills {
+    .Items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

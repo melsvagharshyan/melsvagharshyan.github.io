@@ -1,0 +1,67 @@
+.About {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 8% 4% 5% 4%;
+  max-width: 100%;
+  width: 100%;
+ h1{
+   padding-bottom: 6%;
+   font-family: 'Manrope', sans-serif;
+ }
+
+.AboutContainer{
+  display: flex;
+  justify-content: center;
+
+  .MelsImage{
+    border-radius: 5px;
+    max-width: 380px;
+  }
+
+  .aboutText {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    max-width: 500px;
+    p{
+      font-family: 'Manrope', sans-serif;
+      font-size: 18px;
+    }
+  }
+}
+
+}
+
+@media screen and (max-width: 883px){
+  .About{
+    .AboutContainer{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 440px){
+  .About{
+    .AboutContainer{
+      .MelsImage{
+        max-width: 200px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width: 203px){
+  .About{
+    .AboutContainer{
+      .MelsImage{
+        max-width: 160px;
+      }
+    }
+  }
+
+}
+

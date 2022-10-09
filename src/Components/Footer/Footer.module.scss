@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+.Footer {
+  padding: 80px 10% 50px 10%;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background: #0e232b;
+
+  .section1 {
+    .silver {
+      padding-bottom: 40px;
+      color: silver;
+      font-size: 14px;
+      text-shadow: none;
+    }
+
+    span {
+      padding-bottom: 30px;
+      font-size: 15px;
+    }
+    // Input
+    .subscribe{
+      position: relative;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+
+
+      .example{
+        fill: silver;
+        position: absolute;
+        top: 6px;
+        left: 10px;
+      }
+         input{
+           background: none;
+           color: silver;
+           padding: 8px 7px 7px 35px;
+           outline: none;
+           border: 1px solid gray;
+           -webkit-border-top-left-radius: 9px;
+           -webkit-border-bottom-left-radius: 9px;
+            border-right: none;
+         }
+         button{
+           padding: 0 5% 0 5%;
+           border: none;
+           background: #3fa7b6;
+           color: white;
+           -webkit-border-top-right-radius: 9px;
+           -webkit-border-bottom-right-radius: 9px;
+         }
+
+         input:focus{
+           box-shadow: deepskyblue 0 0 3px 0;
+         }
+
+         button:focus{
+           box-shadow: white 0 0 5px 0;
+         }
+
+
+    }
+
+    .copyright{
+      padding-top: 130px;
+      font-size: 13px;
+    }
+
+  }
+
+  .section4 {
+    text-align: end;
+
+    .contactUs {
+      padding-bottom: 55px;
+      span {
+        color: #3fa7b6;
+      }
+    }
+    .address{
+      display: flex;
+      flex-direction: column;
+      row-gap: 7px;
+    }
+  }
+
+}
+
+
+.Footer {
+  div {
+    font-family: 'Manrope', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 0 10px;
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+//Media
+
+@media screen and (max-width: 660px){
+  .Footer {
+    .subscribe{
+      margin-right: 20px;
+    }
+     flex-direction: column;
+    align-items: center;
+     row-gap: 20px;
+     text-align: center;
+    .section1{
+      align-items: center;
+    }
+    .section4{
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 357px){
+  .Footer {
+    .subscribe{
+      input{
+        max-width: 150px;
+      }
+
+    }
+  }
+}
+
+@media screen and (max-width: 251px){
+  .Footer {
+    .subscribe{
+      input{
+        max-width: 100px;
+      }
+
+    }
+  }
+
+}

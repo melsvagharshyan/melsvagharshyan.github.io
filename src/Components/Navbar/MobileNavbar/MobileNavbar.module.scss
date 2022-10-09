@@ -1,0 +1,39 @@
+.MobileNavbar {
+  display: none;
+
+  .Burger {
+    max-width: 35px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .MobileNavbar {
+    transition: 1s;
+    display: flex;
+    align-items: center;
+
+
+    div {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      padding: 50px;
+      background: rgba(0, 0, 0);
+      background: #51a6b5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 10px;
+
+      a {
+        color: white !important;
+        font-size: 16px;
+      }
+    }
+  }
+
+}
