@@ -65,17 +65,15 @@
       border-radius: 1px;
       width: 18px;
       height: 4px;
-      background: silver;
-      transition: 0.5s;
+      background: rgba(192, 192, 192, 0.5);
     }
 
     .activeButton {
       cursor: pointer;
       border-radius: 1px;
-      width: 18px;
+      width: 25px;
       height: 4px;
       background: deepskyblue;
-      transition: 0.5s;
     }
   }
 }
