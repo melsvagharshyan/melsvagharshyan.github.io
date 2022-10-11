@@ -1,6 +1,7 @@
 import {configureStore, ThunkAction, Action} from '@reduxjs/toolkit';
 import open from './Reducers/MobileReducer';
 import items from './Reducers/SkillsReducer';
+import Slider from  './Reducers/SliderReducer'
 
 
 
@@ -8,7 +9,8 @@ import items from './Reducers/SkillsReducer';
 export const store = configureStore({
     reducer: {
         open,
-        items
+        items,
+        Slider
     },
 });
 

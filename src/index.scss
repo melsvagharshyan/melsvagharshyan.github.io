@@ -3,7 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+::-webkit-scrollbar-thumb {
+  background: rgba(192, 192, 192, 0.5);
+}
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+}
 body {
   margin: 0;
   padding: 0;

@@ -8,6 +8,8 @@ import Footer from "./Components/Footer/Footer";
 import FreeHelp from "./Components/FreeHelp/FreeHelp";
 import {useAppDispatch, useAppSelector} from "./Redux/hooks";
 import {setOpen} from "./Redux/Reducers/MobileReducer";
+import Slider from "./Components/Slider/Slider";
+import ArrowTop from "./Components/ArrowTop/ArrowTop";
 
 
 
@@ -19,8 +21,10 @@ const dispatch = useAppDispatch();
         <div className={styles.App} onTouchMove={()=> open === true && dispatch(setOpen(false))} >
             <Header/>
             <About/>
+            <Slider/>
             <Skills/>
             <Messenger/>
+            <ArrowTop/>
             <FreeHelp/>
             <Footer/>
         </div>
