@@ -9,7 +9,7 @@ const NavLinks: React.FC = () => {
     const {active} = useAppSelector(state=> state.open);
     const dispatch = useAppDispatch();
 
-    const links = ["Skills", "About", "Portfolio", "Consultation", "Contact"];
+    const links = ["About", "Skills", "Portfolio", "Consultation", "Contact"];
 
     return (
         <div className={styles.NavLinks}>

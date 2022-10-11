@@ -1,4 +1,5 @@
 .MobileNavbar {
+  width: 500px;
   display: none;
   .Burger {
     max-width: 35px;
@@ -11,12 +12,12 @@
 
 @media screen and (max-width: 700px) {
   .MobileNavbar {
-    transition: 1s;
     display: flex;
     align-items: center;
 
 
     div {
+      width: 100%;
       position: absolute;
       top: 100%;
       right: 0;
@@ -29,8 +30,13 @@
       row-gap: 10px;
 
       a {
+        text-transform: uppercase;
+        padding: 0 100% 0 100%;
         color: white !important;
         font-size: 16px;
+      }
+      a:hover{
+         color: black !important;
       }
     }
   }

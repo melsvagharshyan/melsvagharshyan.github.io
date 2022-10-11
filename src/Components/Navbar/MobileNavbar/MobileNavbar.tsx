@@ -18,7 +18,7 @@ const MobileNavbar: React.FC = () => {
                              onClick={() => dispatch(setOpen(!open))}/>
 
     return (
-        <nav style={{right: open? "0":"-300px"}} className={styles.MobileNavbar}>
+        <nav  className={styles.MobileNavbar}>
             {open && <NavLinks/>}
             {open ? closeButton : openButton}
         </nav>
