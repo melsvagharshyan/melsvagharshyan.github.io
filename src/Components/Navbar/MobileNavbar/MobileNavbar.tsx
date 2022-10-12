@@ -19,7 +19,7 @@ const MobileNavbar: React.FC = () => {
 
     return (
         <nav  className={styles.MobileNavbar}>
-            {open && <NavLinks/>}
+             <div style={{marginRight: open? "0":"-100%"}} className={styles.Container}>{<NavLinks/>}</div>
             {open ? closeButton : openButton}
         </nav>
     )

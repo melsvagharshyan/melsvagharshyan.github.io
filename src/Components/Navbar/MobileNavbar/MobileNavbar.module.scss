@@ -14,14 +14,17 @@
   .MobileNavbar {
     display: flex;
     align-items: center;
-
+    .Container{
+      transition: 0.3s;
+      margin-right: -100%;
+    }
 
     div {
       width: 100%;
       position: absolute;
       top: 100%;
       right: 0;
-      padding: 50px;
+      padding: 0 0 20px 0;
       background: rgba(0, 0, 0);
       background: deepskyblue;
       display: flex;
@@ -36,7 +39,7 @@
         font-size: 16px;
       }
       a:hover{
-         color: black !important;
+         color: #0e232b !important;
       }
     }
   }

@@ -18,7 +18,7 @@ const {open} = useAppSelector(state=> state.open);
 const dispatch = useAppDispatch();
 
     return (
-        <div className={styles.App} onTouchMove={()=> open === true && dispatch(setOpen(false))} >
+        <div className={styles.App} onClick={()=> open === true && dispatch(setOpen(false))} >
             <Header/>
             <About/>
             <Slider/>
