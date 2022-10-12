@@ -2,6 +2,7 @@
   width: 500px;
   display: none;
   .Burger {
+    padding: 0;
     max-width: 35px;
     cursor: pointer;
     position: absolute;
@@ -15,6 +16,7 @@
     display: flex;
     align-items: center;
     .Container{
+      padding: 0;
       transition: 0.3s;
       margin-right: -100%;
     }
@@ -24,9 +26,9 @@
       position: absolute;
       top: 100%;
       right: 0;
-      padding: 0 0 20px 0;
+      padding: 20px 0 20px 0;
       background: rgba(0, 0, 0);
-      background: deepskyblue;
+      background: linear-gradient(135deg, cyan, deepskyblue) ;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -34,12 +36,8 @@
 
       a {
         text-transform: uppercase;
-        padding: 0 100% 0 100%;
         color: white !important;
         font-size: 16px;
-      }
-      a:hover{
-         color: #0e232b !important;
       }
     }
   }
