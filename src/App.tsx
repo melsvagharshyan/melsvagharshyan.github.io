@@ -14,8 +14,8 @@ import ArrowTop from "./Components/ArrowTop/ArrowTop";
 
 
 const App: React.FC = () => {
-const {open} = useAppSelector(state=> state.open);
-const dispatch = useAppDispatch();
+    const {open} = useAppSelector(state=> state.open);
+    const dispatch = useAppDispatch();
 
     return (
         <div className={styles.App} onClick={()=> open === true && dispatch(setOpen(false))} >
