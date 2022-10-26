@@ -10,12 +10,7 @@ const Skills: React.FC = () => {
     return (
         <div className={styles.Skills} id={"Skills"}>
             <div className={styles.SkillsText}>
-                <h1>My Skills</h1>
-                <span>
-                   My front-end skills, which I chose while learning programming․
-                    <br/>
-                    They make me feel invincible․
-                </span>
+                <h1>SKILLS</h1>
             </div>
             <div className={styles.Items}>
                 {

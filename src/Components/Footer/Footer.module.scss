@@ -6,7 +6,12 @@
   display: flex;
   justify-content: space-around;
   background: #0e232b;
-
+  hr{
+    height: 0.09px;
+    background: white;
+    box-shadow: whitesmoke 0 0 3px 0;
+    border: none;
+  }
   .section1 {
     .silver {
       padding-bottom: 40px;

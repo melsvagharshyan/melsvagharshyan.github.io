@@ -1,68 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&display=swap');
 .About {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 8% 4% 5% 4%;
   max-width: 100%;
   width: 100%;
- h1{
-   padding-bottom: 6%;
-   font-family: 'Poppins', sans-serif;
-   font-weight: bold;
- }
+  padding: 150px 10px 10px 10px;
+}
 
-.AboutContainer{
-  display: flex;
-  justify-content: center;
-
-  .MelsImage{
-    border-radius: 5px;
-    max-width: 380px;
+.About {
+  .Text{
+    img{
+      max-width: 60px;
+      margin: 0 10px 50px 10px;
+    }
   }
+}
+h1{
+  text-align: center;
+  padding-bottom: 9%;
+  font-family: 'Cinzel', serif;
+  @media screen and (max-width: 450px) {
+    font-size: 20px;
 
-  .aboutText {
-    padding: 20px 20px 20px 20px;
+  }
+}
+
+.About {
+  .SliderContainer {
+    border-radius: 10px;
+    box-shadow: silver 0 0 10px 0;
+    position: relative;
     display: flex;
-    flex-flow: column;
-    justify-content: center;
-    max-width: 500px;
-    p{
-      font-family: 'Manrope', sans-serif;
-      font-size: 18px;
-    }
-  }
-}
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    max-width: 1200px;
 
-}
-
-@media screen and (max-width: 883px){
-  .About{
-    .AboutContainer{
+    .Text {
+      text-align: center;
+      max-width: 90%;
+      height: 300px;
+      display: flex;
       flex-direction: column;
-      align-items: center;
-    }
-  }
-}
+      justify-content: center;
+      row-gap: 30px;
 
-@media screen and (max-width: 440px){
-  .About{
-    .AboutContainer{
-      .MelsImage{
+      h3 {
+        color: deepskyblue;
+        font-family: 'Cinzel', serif;
+      }
+      hr{
+        height: 0.07px;
+        box-shadow: deepskyblue 0 0 2px 0;
+        background: deepskyblue;
         max-width: 200px;
+        width: 200px;
+        margin:1vh  auto 2vh auto;
+
+        border: none;
+      }
+
+      p{
+        font-family: 'Klee One', cursive;
+        font-size: 18px;
+        color: gray;
       }
     }
   }
-
 }
 
-@media screen and (max-width: 203px){
+
+.About {
+  .SliderTracker {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+
+    .button {
+      margin: 0 0.4vh 0 0.4vh;
+      cursor: pointer;
+      border-radius: 1px;
+      width: 3vh;
+      height: 4px;
+      background: rgba(192, 192, 192, 0.5);
+    }
+
+    .activeButton {
+      margin: 0 0.4vh 0 0.4vh;
+      cursor: pointer;
+      border-radius: 1px;
+      width: 3vh;
+      height: 4px;
+      background: linear-gradient(135deg, cyan, deepskyblue) ;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
   .About{
-    .AboutContainer{
-      .MelsImage{
-        max-width: 160px;
+    .SliderContainer{
+         padding: 0;
+      .Text {
+        row-gap: 20px;
+        position: relative;
+        height: 250px;
+        h3 {
+
+        }
+        p{
+          font-size: 13px;
+        }
       }
     }
   }
+}
 
+@media screen and (max-width: 450px) {
+  .About{
+    position: relative;
+    overflow: hidden;
+    .SliderContainer{
+      position: relative;
+      .Text {
+        position: relative;
+        row-gap: 5px;
+        p{
+        font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .About{
+    .SliderContainer{
+      height: 250px;
+      .Text {
+        row-gap: 5px;
+        img{
+          max-width: 40px;
+        }
+        h3 {
+          padding: 0;
+          font-size: 15px;
+        }
+        p{
+          font-size: 10px;
+        }
+      }
+    }
+  }
 }
 

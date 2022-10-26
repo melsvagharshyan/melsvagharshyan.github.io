@@ -4,9 +4,7 @@ import React, {useEffect, useState} from 'react';
 import {Link} from "react-scroll";
 
 
-
-
-const ArrowTop:React.FC = () => {
+const ArrowTop: React.FC = () => {
     const [show, setShow] = useState<boolean>(false);
 
     function ArrowShow() {
@@ -17,12 +15,14 @@ const ArrowTop:React.FC = () => {
         }
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         window.addEventListener("scroll", ArrowShow);
-    },[]);
+    }, []);
 
     return (
-        <Link smooth={true} to={"Home"}><IoIosArrowUp style={{display: show? "block" : "none"}} size={"40"} className={styles.Arrow}/></Link>
+        <Link smooth={true} to={"Home"}>
+            <IoIosArrowUp style={{display: show ? "block" : "none"}} size={"40"} className={styles.Arrow}/>
+        </Link>
     );
 };
 

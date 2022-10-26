@@ -2,12 +2,14 @@
   .Arrow {
     margin: auto;
     fill: deepskyblue;
-    border-radius: 100%;
+    border-radius: 3px;
     cursor: pointer;
     z-index: 1;
     position: fixed;
     bottom: 20%;
     right: 2.8%;
+    background: rgba(0,0,0, 0.03);
+    box-shadow: white 0 0 1px 0;
   }
 
 
@@ -15,7 +17,6 @@
     .Arrow{
       bottom: 15%;
       right: 6%;
-      max-width: 50px;
     }
   }
 

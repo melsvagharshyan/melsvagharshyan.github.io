@@ -1,15 +1,14 @@
 import styles from './App.module.scss';
 import React from "react";
 import Header from "./Components/Header/Header";
-import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Messenger from "./Components/Messenger/Messenger";
 import Footer from "./Components/Footer/Footer";
 import FreeHelp from "./Components/FreeHelp/FreeHelp";
 import {useAppDispatch, useAppSelector} from "./Redux/hooks";
 import {setOpen} from "./Redux/Reducers/MobileReducer";
-import Slider from "./Components/Slider/Slider";
 import ArrowTop from "./Components/ArrowTop/ArrowTop";
+import About from "./Components/About/About";
 
 
 
@@ -21,7 +20,6 @@ const App: React.FC = () => {
         <div className={styles.App} onClick={()=> open === true && dispatch(setOpen(false))} >
             <Header/>
             <About/>
-            <Slider/>
             <Skills/>
             <Messenger/>
             <ArrowTop/>

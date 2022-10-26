@@ -1,4 +1,4 @@
-type slidesType = {text: string, autor: string}[];
+type slidesType = {text: string, title: string}[];
 
 export type sliderStateType = {
     slides: slidesType,
