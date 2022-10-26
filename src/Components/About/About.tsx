@@ -26,7 +26,7 @@ const About: React.FC = () => {
                     }
                 </div>
                 <div className={styles.SliderTracker}>{slides.map((d, i) => {
-                    return <div className={index === i ? styles.activeButton : styles.button} onClick={()=> dispatch(setIndex(i))}></div>
+                    return <div key={i} className={index === i ? styles.activeButton : styles.button} onClick={()=> dispatch(setIndex(i))}></div>
                 })}</div>
             </div>
         </div>
