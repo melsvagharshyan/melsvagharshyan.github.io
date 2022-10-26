@@ -8,7 +8,8 @@
 
 
 .HeaderText {
-  padding-top: 9%;
+  padding-top: 8%;
+  padding-bottom: 3%;
   max-width: 90%;
   width: 100%;
   display: flex;
@@ -28,8 +29,8 @@
 
 
     button {
-      margin-top: 30px;
-      margin-bottom: 70px;
+     // margin-top: 30px;
+      //margin-bottom: 70px;
       padding: 12px;
       border: none;
       background: linear-gradient(135deg, cyan, deepskyblue) ;
@@ -42,10 +43,6 @@
       font-family: 'Manrope', sans-serif;
     }
 
-    button:hover {
-      box-shadow: lightblue 0 0 15px 0;
-      background: none;
-    }
 
 }
 
@@ -57,7 +54,7 @@
 
 
   .HeaderText {
-    padding: 100px 10px 0 10px;
+    padding: 100px 10px 6% 10px;
     align-items: center;
 
     .sloganText {
@@ -74,6 +71,7 @@
 @media screen and (max-width: 450px) {
 
   .HeaderText {
+    grid-gap: 25px;
     .sloganText {
       font-size: 25px;
     }
