@@ -13,6 +13,9 @@ import About from "./Components/About/About";
 
 
 const App: React.FC = () => {
+
+
+
     const {open} = useAppSelector(state=> state.open);
     const dispatch = useAppDispatch();
 
