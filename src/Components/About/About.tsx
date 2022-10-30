@@ -1,36 +1,58 @@
 import styles from './About.module.scss';
-import React, {useEffect} from 'react';
-import {useAppDispatch, useAppSelector} from "../../Redux/hooks";
-import {setIndex} from "../../Redux/Reducers/SliderReducer";
+import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import {useAppSelector} from "../../Redux/hooks";
+import {responsive} from "./CarouselAttributes";
+
 
 const About: React.FC = () => {
-    const dispatch = useAppDispatch();
-    const {slides, index} = useAppSelector(state => state.Slider);
+    const {slides} = useAppSelector(state => state.Slider);
 
+
+
+    // @ts-ignore
+    const CustomDot = ({onClick, ...rest}) => {
+        const {
+            active
+        } = rest;
+        return (
+            <div className={active ? styles.active : styles.inactive} onClick={() => onClick()}></div>
+        );
+    };
 
 
     return (
-        <div className={styles.About} id={"About"} >
+        <div className={styles.About} id={"About"}>
             <h1>ABOUT ME</h1>
-            <div className={styles.SliderContainer}>
-                <div className={styles.Text}>
-                    <h3>{slides[index].title}</h3>
-                    <hr/>
-                    <p>{slides[index].text}</p>
-                    {index === 3 && <div>
-                        <img src={'../../Images/Languages/armenian.png'}/>
-                        <img src={'../../Images/Languages/english.png'}/>
-                        <img src={'../../Images/Languages/russian.png'}/>
-                    </div>
-
-                    }
-                </div>
-                <div className={styles.SliderTracker}>{slides.map((d, i) => {
-                    return <div key={i} className={index === i ? styles.activeButton : styles.button} onClick={()=> dispatch(setIndex(i))}></div>
-                })}</div>
-            </div>
+            <Carousel className={styles.Carousel}
+                      responsive={responsive}
+                      infinite={true}
+                      showDots={true}
+                      customDot={<CustomDot onClick={undefined}/>}
+                      arrows={false}
+            >
+                {
+                    slides.map((slide, index) => {
+                        return (
+                            <div className={styles.item} key={index}>
+                                <h3>{slide.title}</h3>
+                                <hr/>
+                                {index !== 3 && <p>{slide.text}</p>}
+                                {index === 3 && <div>
+                                    <img src={'../../Images/Languages/armenian.png'} alt={"flag"}/>
+                                    <img src={'../../Images/Languages/english.png'} alt={"flag"}/>
+                                    <img src={'../../Images/Languages/russian.png'} alt={"flag"}/>
+                                </div>
+                                }
+                            </div>
+                        )
+                    })
+                }
+            </Carousel>
         </div>
-    );
+    )
+        ;
 };
 
 export default About;
