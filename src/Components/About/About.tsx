@@ -4,20 +4,16 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import {useAppSelector} from "../../Redux/hooks";
 import {responsive} from "./CarouselAttributes";
+import {DotProps} from 'react-multi-carousel/lib/types';
 
 
 const About: React.FC = () => {
     const {slides} = useAppSelector(state => state.Slider);
 
 
-
-    // @ts-ignore
-    const CustomDot = ({onClick, ...rest}) => {
-        const {
-            active
-        } = rest;
+    const CustomDot = ({onClick, active}: DotProps) => {
         return (
-            <div className={active ? styles.active : styles.inactive} onClick={() => onClick()}></div>
+            <div className={active ? styles.active : styles.inactive} onClick={onClick}></div>
         );
     };
 
