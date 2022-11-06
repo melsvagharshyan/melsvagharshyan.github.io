@@ -10,5 +10,25 @@
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 10px 0;
+    margin-bottom: 2px;
+  }
+  a:hover{
+    border-bottom: 2px solid deepskyblue;
+    margin-bottom: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px){
+  .NavLinks{
+    a{
+      border: none;
+      margin: 0;
+    }
+    a:hover{
+      border: none;
+      margin: 0;
+    }
   }
 }
