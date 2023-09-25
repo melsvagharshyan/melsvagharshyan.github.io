@@ -28,7 +28,7 @@ const App: React.FC = () => {
             <ArrowTop/>
             <FreeHelp/>
             <Footer/>
-            <div>ok</div>
+            <div>okk</div>
         </div>
     );
 }
