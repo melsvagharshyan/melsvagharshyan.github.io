@@ -28,6 +28,9 @@ const App: React.FC = () => {
             <ArrowTop/>
             <FreeHelp/>
             <Footer/> 
+            <div>
+                <input type='text'/>
+            </div>
         </div>
     );
 }
