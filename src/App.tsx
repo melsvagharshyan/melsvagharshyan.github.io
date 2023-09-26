@@ -27,8 +27,7 @@ const App: React.FC = () => {
             <Messenger/>
             <ArrowTop/>
             <FreeHelp/>
-            <Footer/>
-            <div>ok</div>
+            <Footer/> 
         </div>
     );
 }
